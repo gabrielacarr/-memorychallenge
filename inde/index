@@ -1,0 +1,106 @@
+
+// let backgroundImg = new Image()
+// backgroundImg.src="./first.png"
+// let backgroundImg1 = new Image()
+// backgroundImg1.src="./secondIMG.png"
+
+
+// let background = {
+//     x:0,
+//     y:0
+// }
+// let background1 = {
+//     x:800,
+//     y:0
+// }
+
+// CANVAS BACKGROUND 
+
+// function drawBackground(backgroundImg, background){
+//     if(background.x < -800) background.x=800;
+//     ctx.drawImage(backgroundImg, background.x, background.y, canvas.width, canvas.height)
+//     background.x--;
+// }
+
+// SQUARE ANIMATION
+// let squareObj = {
+//     x: canvas.width/2,
+//     y: canvas.height - 20
+// }
+
+// function drawSquare() {
+    /*let gradient = ctx.createLinearGradient(0,0,0,170);
+    gradient.addColorStop(0, 'black');
+    gradient.addColorStop(1, 'white');
+
+    ctx.fillStyle(gradient);*/
+//     ctx.fillRect(squareObj.x,squareObj.y,20,20) // fills retangle with x,y, width, and height 
+
+// }
+
+// document.onkeydown = function(e) {
+//     if (e.key === 'ArrowLeft') {
+//         squareObj.x-=10
+//     }
+//     if (e.key === 'ArrowRight') {
+//         squareObj.x+=10
+//     }
+// }
+
+// let squareX = canvas.width/2;  //placed outside because its creating the variable squareX as a axis
+
+// function animate(){ // requestAnimationFrame is a loop that callback a function to go over and over again
+//    animateId = window.requestAnimationFrame(animate)
+//    ctx.clearRect(0,0,canvas.width,canvas.height)  // why i opace, what its doing  // earase what i did previous loop
+   
+//    drawBackground(backgroundImg, background)
+//    drawBackground(backgroundImg1, background1)
+//     drawSquare()
+    // ctx.fillRect(squareObj.x,squareObj.y,20,20) // fills retangle with x,y, width, and height 
+    // console.log(squareX)
+
+//}
+//window.requestAnimationFrame(animate)
+
+
+
+/ KEY EVENT LISTENER 
+// let only exist within scope of the page and wont leave outside function
+
+
+// document.onkeydown = function(e) => {
+//     if (e.key === 'ArrowLeft') {
+//         squareObj.x-=10
+//     }
+//     if (e.key === 'ArrowRight') {
+//         squareObj.x+=10
+//     }
+// }
+
+// var leftButton = false;
+// var rightButton = false;
+// document.addEventListener("keydown", keyDownHandler, false);
+// document.addEventListener("keyup", keyUpHandler, false);
+
+// KEY DOWN
+// is this window or function?
+// function keyDownHandler(event) {
+//     if(event.key == "Left") {
+//         leftButton = true;
+//     }
+//     if(event.key == "Right"){
+//         rightButton = true;
+//     }
+// }
+
+// KEY UP
+//
+// function keyUpHandler(event) {
+//     if(event.key == "left") {
+//         leftButton = false;
+//     }
+//     if(event.key = "Right") {
+//         rightButton = false;
+//     }
+// }
+
