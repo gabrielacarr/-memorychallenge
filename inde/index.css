@@ -1,9 +1,42 @@
-/* body{ */
-    /* padding: 0;
-    margin: auto;
-    display:flex;
-    justify-content: center; */
-/* } */
-/* canvas {
-    border: 1px solid red;
-} */
+/******** BODY ********/
+
+*{
+
+    padding: 0;
+    margin: 0;
+    margin: border-box;
+}
+
+body{
+    height: 100vh; /* viewport height */
+    background: black;
+}
+/******** IMAGES ********/
+img{
+    width: 100px;
+}
+
+.memoryGame{
+width: 640px;
+height: 640px;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+}
+
+
+/******** 
+Box-sizing: content box 
+width: 300px
+height: 200px
+padding: 40px;
+boreder: 30px;
+(new total w: 440px, h: 340px)
+*********
+Box-sizing: boreder-box
+width: 300px
+height: 200px
+border: 30px;
+padding: 40px
+(new total w: 300px, h: 200px)
+*********/
