@@ -4,119 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory</title>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+<style>
+
+   
+
+
+    body{
+        display: flex;
+        width: 100vw ;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+    }
+       
+    #butOne{
+        background-image: url("./images/hex.png"); 
+        background-size: 660px;
+        background-repeat: no-repeat;
+        width: 660px;
+        height: 655px;
+        color: whitesmoke;
+        text-align: center;
+        border: 2px solid  white;
+        
+    }
+    #butTwo{
+        background-image: url("./images/hex.png"); 
+        background-size: 660px;
+        background-repeat: no-repeat;
+        width: 660px;
+        height: 655px;
+        color: whitesmoke;
+        text-align: center;
+        border: 2px solid  white;
+       
+    
+    }
+
+    a{
+
+        flex-direction: row;
+        flex: 6;
+    }
+
+    h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3rem;
+    align-self: center;
+    padding-left: 80px;
+    padding-bottom: 170px;
+   
+   } 
+  
+   
+   
+</style>
+
+
 </head>
-
-
 <body>
-<h1 class="header">anamnesis
-</h1>
-<section class="memoryGame">
-
-
-<!-- THINGS TO WORK ON -->
-<!-- WELCOME PAGE WITH INSTRUCTIONS, NAME OF PLAYER -->
-<!-- MINIMIALISM BLACK, WHITE AESTHETICS -->
-<!-- NEED TO UPDATE BACK OF CARDS TO BE RANDOM, BY CHANGING SOME BACK FACE IMAGES -->
-<!-- 3-D FLIP ISNT NOT FUNCTIONING, WHY?\ USE DIFFERENT TYPE OF CLICK/TRANSISTION MAYBE? -->
-<!-- CREATE A HOME PAGE WITH INSTRUCTIONS -->
-<!-- THREE SEPERATE LEVELS -->
-<!-- SOUNDS FOR: CARD FLIPPING, WIN, LOST -->
-<!-- CARD DISSOLVE WHEN WON, SHAKEN INTO PLACE WHEN INCORRECT MATCH -->
-<!-- POINTS STATUS BAR-->
-<!-- LIMITED AMOUNT OF TIMES TO PLAY BEFORE GAME HAS ENDED -->
-<!-- PLACE TIMER, SHORTER EACH LEVEL -->
-<!-- SOUND OF TIMER -->
-<!-- GLITCH ON ENTIRE PAGE WHEN LOST -->
-
-
-   <!------MEMORY CARD ONE------->
-    <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.08.14 PM.png" alt="back, snake">  <!-- BACK OF CARD IMAGE-->
+  <div>
+      <h1> anamnesis</h1>  
     </div>
-     <!------MEMORY CARD TWO------->
-     <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.08.14 PM.png" alt="back, snake down"> <!-- BACK OF CARD IMAGE-->
-    </div>
-     <!------MEMORY CARD THREE------->
-     <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.08.14 PM.png" alt="back, snake down"> <!-- BACK OF CARD IMAGE-->
-    </div>
-     <!------MEMORY CARD FOUR------->
-     <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.06.55 PM.png" alt="back, unicorn skull"> <!-- BACK OF CARD IMAGE-->
-    </div>
-     <!------MEMORY CARD FIVE------->
-     <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.06.55 PM.png" alt="back, unicorn skull"> <!-- BACK OF CARD IMAGE-->
-    </div>
-     <!------MEMORY CARD SIX------->
-     <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.06.55 PM.png" alt="back, unicorn skull"> <!-- BACK OF CARD IMAGE-->
-    </div>
-     <!------MEMORY CARD SEVEN------->
-     <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.06.50 PM.png" alt="back, ram skull"> <!-- BACK OF CARD IMAGE-->
-    </div>
-     <!------MEMORY CARD EIGHT------->
-     <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.06.50 PM.png" alt="back, ram skull"> <!-- BACK OF CARD IMAGE-->
-    </div> 
-  <!------MEMORY CARD NINE------->
-    <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.06.50 PM.png" alt="back, ram skull"> <!-- BACK OF CARD IMAGE-->
-    </div> 
-    <!------MEMORY CARD TEN------->
-    <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.06.43 PM.png" alt="back, ram skull side"> <!-- BACK OF CARD IMAGE-->
-    </div> 
-    <!------MEMORY CARD ELLEVEN------->
-    <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.06.43 PM.png" alt="back, ram skull side"> <!-- BACK OF CARD IMAGE-->
-    </div> 
-    <!------MEMORY CARD TWELVE------->
-    <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.06.43 PM.png" alt="back, ram skull side"> <!-- BACK OF CARD IMAGE-->
-    </div> 
-    <!------MEMORY CARD THIRTEEN------->
-    <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.00.25 PM.png" alt="back, snake up"> <!-- BACK OF CARD IMAGE-->
-    </div> 
-    <!------MEMORY CARD FOURTEEN------->
-    <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.00.25 PM.png" alt="back, snake up"> <!-- BACK OF CARD IMAGE-->
-    </div> 
-    <!------MEMORY CARD FITFHTEEN------->
-    <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="Screen Shot 2020-04-13 at 10.00.25 PM.png" alt="back, snake up"> <!-- BACK OF CARD IMAGE-->
-    </div> 
-    <!------MEMORY CARD SIXTEEN------->
-    <div class="memoryCard">
-        <img class="frontFace" src="Screen Shot 2020-04-13 at 9.09.02 PM.png" alt="font"> <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="scorpion.png" alt="back, scorpion"> <!--------------------- BACK OF CARD IMAGE-->
-    </div> 
+  <div>
+<a href="gameEasy.html">
+<button id="butOne">
+    
+    basic 
+</button></a>
 
+<a href="gameHard.html">
+<button id="butTwo">
 
+    mentally fucked 
+</button></a>
 
-</section>
+</div> 
 
 </body>
 
-<script src="./index.js"></script>
 </html>

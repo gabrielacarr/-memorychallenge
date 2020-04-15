@@ -72,8 +72,9 @@ body {
     padding: 20px;
     position: absolute;
     border-radius: 5px;
-     backface-visibility: hidden;
-    transform: rotateY(180deg); 
+    backface-visibility: hidden;
+    transform: rotateY(180deg);  
+    /* opacity: 0.2; */
 }
 
  .backFace {
@@ -83,6 +84,7 @@ body {
     position: absolute;
     border-radius: 5px;
     backface-visibility: hidden; 
+   
 } 
 
 
@@ -101,6 +103,14 @@ body {
   .memoryCard.turned .backFace {
     transform: rotateY(180deg);
   }
+
+
+  /* ********* TIMER **********
+  .timer {
+	display: inline-block;
+	margin: 0 1rem;
+} */
+
 
 
 /******** RE-ORGNAZIZED ********/
