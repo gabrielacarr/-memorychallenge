@@ -9,8 +9,8 @@
     text-transform: uppercase;
     letter-spacing: 3rem;
     text-align: center;
-
-   padding-bottom: 70px;
+    padding-left: 80px;
+    padding-bottom: 70px;
    
    } 
 
@@ -23,8 +23,7 @@ body {
     box-sizing: border-box;
     margin: border-box;
     height: 100vh;
-    viewport: height; 
-    display: flex;
+    display: center;
     background: whitesmoke;
 
 }  
@@ -52,7 +51,7 @@ body {
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
-    transition: all .5s; */
+    transition: all .5s; 
  } 
 
 /* by setting width to 25% and height to 33.333% minus 10px from margin */
@@ -61,7 +60,7 @@ body {
 
 
 .memoryCard:active {
-    transform: scale(2);
+    transform: scale(1);
     transition: transform .9s; 
  } 
 

@@ -93,8 +93,13 @@ function checkWin(pic){
     if(clicks % 2 !== 0){ //first turn
         picOne = pic
     } else { //second turn
-        if(picOne.children[1].src === pic.children[1].src){ //if they are teh same 
-            alert('nice')
+        if(picOne.children[1].src === pic.children[1].src){ 
+            // if they are the same 
+            // alert 
+            setTimeout(function(){
+              alert("Your selection matched!")  
+            }, 500)
+            
         } else {
             setTimeout(function(){
                 picOne.className = "memoryCard turned"
