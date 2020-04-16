@@ -62,7 +62,7 @@ let mySound;
 
 
 // GAME STARTS
-
+setTimeout(gameStarts, 2000)
 function gameStarts() {
   document.querySelectorAll(".memoryCard").forEach((card) => {
     card.className += " turned";
