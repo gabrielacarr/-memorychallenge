@@ -81,7 +81,11 @@ function startClock(){
       }
       
       document.querySelector('#clock').innerHTML = time--
-    }
+      if(time < 0){
+          //stop the timer from counting down.  document.queryselector ("#clock") = time == 0 ??
+          document.querySelector("#clock").innerHTML = 0
+      }
+    } 
     ,1000
   )
 }
