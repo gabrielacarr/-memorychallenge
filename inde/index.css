@@ -14,7 +14,24 @@
    
    } 
 
+li.dot{
+list-style-type: disc;
+}
+
+li.wrong{
+list-style-type: circle;
+}
+li{
+    margin: 0 2rem; 
+    font-size: 3rem;
+}
+
+ul{
+    position: fixed;
+}
 /******* BODY ******* */
+
+
 
 
 body {

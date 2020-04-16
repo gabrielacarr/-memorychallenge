@@ -95,6 +95,14 @@ for (let i = 0; i < arrayimage.length; i++) {
   // }
   // trying to get even amount of cards to match to complete board
   // not sure how to complete //////////////////////////////////////////////////////////////
+  let score = 0;
+  // score 
+  function addScore(){
+  // alert("Your selection matched!");
+  score++;
+  let dot = `<li class="dot"></li>`;
+  document.querySelector(".dots").innerHTML += dot;
+  }
 
   // CHECK WIN
   function checkWin(pic) {
@@ -107,10 +115,14 @@ for (let i = 0; i < arrayimage.length; i++) {
         // if they are matched cards
         // alert
         setTimeout(function () {
-          alert("Your selection matched!");
+          
+          addScore()
         }, 500);
       } else {
         // when cards do not match
+        let dot = `<li class="wrong"></li>`;
+        document.querySelector(".dots").innerHTML += dot;
+
         setTimeout(function () {
           picOne.className = "memoryCard turned";
           pic.className = "memoryCard turned";
@@ -140,31 +152,31 @@ for (let i = 0; i < arrayimage.length; i++) {
   // time does not relfect  nor do the move counts increase //////////////////////////////////////////
 
   // TIMER COUNT SELECTION
-  function moveCount() {
-    moves++;
-    counter.innerHTML = `${moves} move(s)`;
-    //start timer on first click
-    if (moves == 1) {
-      second = 0;
-      minute = 0;
-      hour = 0;
-      startTimer();
-    }
-    // establish rating based on moves
-    if (moves > 8 && moves < 12) {
-      for (i = 0; i < 4; i++) {
-        if (i > 1) {
-          stars[i].style.visibility = "collapse";
-        }
-      }
-    } else if (moves > 13) {
-      for (i = 0; i < 3; i++) {
-        if (i > 0) {
-          stars[i].style.visibility = "collapse";
-        }
-      }
-    }
-  }
+  // function moveCount() {
+  //   moves++;
+  //   counter.innerHTML = `${moves} move(s)`;
+  //   //start timer on first click
+  //   if (moves == 1) {
+  //     second = 0;
+  //     minute = 0;
+  //     hour = 0;
+  //     startTimer();
+  //   }
+  //   // establish rating based on moves
+  //   if (moves > 8 && moves < 12) {
+  //     for (i = 0; i < 4; i++) {
+  //       if (i > 1) {
+  //         stars[i].style.visibility = "collapse";
+  //       }
+  //     }
+  //   } else if (moves > 13) {
+  //     for (i = 0; i < 3; i++) {
+  //       if (i > 0) {
+  //         stars[i].style.visibility = "collapse";
+  //       }
+  //     }
+  //   }
+  // }
 
   // BEGIN TIMER
   function startTimer() {
