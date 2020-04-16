@@ -1,83 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memory</title>
     <style>
-      body {
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        flex-direction: column;
-        align-items: center;
-      }
 
-      #butOne {
-        background-image: url("./images/hex.png");
-        background-size: 660px;
-        background-repeat: no-repeat;
-        width: 660px;
-        height: 655px;
-        color: whitesmoke;
-        text-align: center;
-        border: 2px solid white;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 300;
-        text-transform: uppercase;
-        letter-spacing: 3rem;
-        padding-bottom: 40px;
-        padding-left: 50px;
-      }
-      #butTwo {
-        background-image: url("./images/hex.png");
-        background-size: 660px;
-        background-repeat: no-repeat;
-        width: 660px;
-        height: 655px;
-        color: whitesmoke;
-        text-align: center;
-        border: 2px solid white;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 300;
-        text-transform: uppercase;
-        letter-spacing: 2rem;
-        padding-bottom: 30px;
-        padding-left: 50px;
-      }
+       * {
+           outline: none;
+           /* background-image: url("/cream.png"); */
+       }
 
-      a {
-        flex-direction: row;
-        flex: 6;
-      }
+        body {
 
-      h1 {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 300;
-        text-transform: uppercase;
-        letter-spacing: 3rem;
-        align-self: center;
-        padding-left: 80px;
-        padding-bottom: 170px;
-      }
+            /* background-image:url( "/cream.png");
+            background-repeat: repeat;
+            background-size:inherit; */
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: row;
+            align-items: center;
+            overflow: hidden;
+            text-align: center;  
+            margin: 0;      
+        }
+
+        #butOne {
+            background-image: url("/hex_clear.png");
+            background-size: 660px;
+            background-repeat: no-repeat;
+            width: 660px;
+            height: 655px;
+            color: black;
+            text-align: center;
+            /* border: 2px solid white; */
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2rem;
+            /* padding-left:3rem;
+            padding-bottom: 3rem; */
+            margin: 0;
+            display:inline-block;
+            border: 0; 
+            text-decoration: none;
+            cursor:pointer;
+            padding: 0;
+            background-blend-mode:difference;
+            
+        }
+
+
+     
+
+        #butTwo {
+            background-image: url("/hex_clear.png");
+            background-size: 660px;
+            background-repeat: no-repeat;
+            width: 660px;
+            height: 655px;
+            color: whitesmoke;
+            text-align: center;
+            /* border: 2px solid white; */
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2rem;
+            /* padding-left:3rem;
+            padding-bottom: 3rem; */
+            margin: 0;
+            display:inline-block;
+            border: 0; 
+            text-decoration: none;
+            cursor:pointer;
+            padding: 0;
+        }
+
+        a {
+            flex-direction: row;
+            flex: 6;
+        }
+
+        h1 {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: 60px;
+            text-transform: uppercase;
+            letter-spacing: 3.5rem;
+            text-align: center;
+            padding-left: 89px;
+            /* padding-top: 300px; */
+            /* padding-bottom: 5px; */
+        }
+
+        /* INSTRUCTIONAL GUIDE  */
+        h5 {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 200;
+            text-transform: uppercase;
+            letter-spacing: .7rem;
+            /* text-align: center; */
+            padding-left: 30px;
+
+            /* padding-bottom: 20px; */
+        }
+        
+
+        /* ANIMATION */
+        /* paragragh instructional guidelines */
+        .typewriter {
+            overflow: hidden;
+            text-align: center;
+            border-right: .15em solid orange;
+            white-space: nowrap;
+            margin-left: 40px;
+            margin-right: 40px;
+            letter-spacing: .15em;
+            /* animation has yet to display */
+            animation:
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typying {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-colo: orange;
+            }
+        }
     </style>
-  </head>
-  <body>
-    <div>
-      <h1>anamnesis</h1>
-    </div>
-    <div>
-      <a href="gameEasy.html">
-        <button id="butOne">
-          basic
-        </button></a
-      >
+</head>
 
-      <a href="gameHard.html">
-        <button id="butTwo">
-          mentally fucked
-        </button></a
-      >
+<body>
+    <div>
+        <h1>anamnesis</h1>
+        <div clas="instruction">
+            <h5><i>instructional guidelines<i></h5>
+            <div class="typewriter">
+                <h6>
+                    welcome to a memory game that will challange your biggest fears of your mental sanity deteriation.
+                    <br>
+                    here will dispkay the instructional guideline to keep your sanity in the duration of ths memory
+                    challange. <br>
+                    below you will find two selections available: the first one is basic followed by a difficult sanity
+                    level. <br>
+                    once level has been selected you will have a moment to view image placement on the platform
+                    displayed. <br>
+                    once the timer has begun there will thirty seconds to complete the game before timer
+                    termination.<br>
+                    therfore you must match all identical images dispalyed within the time allowed. <br>
+                    you are now given a challenge...will you proceed, if so select your sanity. <br>
+                </h6>
+            </div>
+        </div>
+
+
     </div>
-  </body>
+    <div>
+        <a href="gameEasy.html">
+            <button id="butOne">
+                basic
+            </button></a>
+
+        <a href="gameHard.html">
+            <button id="butTwo">
+                mentally fucked
+            </button></a>
+    </div>
+
+</body>
+
 </html>
