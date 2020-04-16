@@ -67,9 +67,24 @@ function gameStarts() {
   document.querySelectorAll(".memoryCard").forEach((card) => {
     card.className += " turned";
   });
+  startClock()
 }
-setTimeout(gameStarts, 3000); //too fast 3k
-
+// setTimeout(gameStarts, 3000); //too fast 3k
+function startClock(){
+  let time = 30;
+  setInterval(
+    function(){
+      if(time === 0){
+      
+        alert("Game has terminated")
+        location.href = "/"
+      }
+      
+      document.querySelector('#clock').innerHTML = time--
+    }
+    ,1000
+  )
+}
 document.querySelectorAll(".memoryCard").forEach((card) => {
   //Loop through all cards
   card.addEventListener("click", function (e) {
@@ -226,7 +241,7 @@ function playAgain() {
 // wait for some milliseconds before game starts
 window.onload = function () {
   setTimeout(function () {
-    startGame();
+    gameStarts();
   }, 1200);
 };
 
