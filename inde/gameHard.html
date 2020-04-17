@@ -1,221 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Memory</title>
-    <link rel="stylesheet" type="text/css" href="./index.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <h1 class="header">anamnesis</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory</title>
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+  <style>
+    li.dot {
+      list-style-type: disc;
+      margin-left: 170px;
+      color: goldenrod;
+    }
 
-    <!-- SCORE HEADER -->
-    <section class="scoreHeader">
-      <ul class="dots">
-      </ul>
+    li.wrong {
+      list-style-type: circle;
+      margin-left: 170px;
+      color: goldenrod;
+    }
 
-      <div id="clock">
+    #clock{
+  font-size: 100px;
+  display:flex;
+  justify-content: center;
+  width: 100vw;
+  color: goldenrod;
+}
 
-      </div>
 
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet" />
+</head>
 
+<body>
+  <h1 class="header">anamnesis</h1>
 
-      <div class="timer"></div>
-      <div class="restart" onclick=startGame()>
-        <i class="repeat"></i>
+  <!-- SCORE HEADER -->
+  <section class="scoreHeader">
+    <ul class="dots">
+    </ul>
+
+    <div id="clock">
+
     </div>
-    </section>
 
-    <section class="memoryGame">
-      <!-- THINGS TO WORK ON -->
-      <!-- WELCOME PAGE WITH INSTRUCTIONS, NAME OF PLAYER -->
-      <!-- MINIMIALISM BLACK, WHITE AESTHETICS -->
 
-      <!-- THREE SEPERATE LEVELS -->
-      <!-- SOUNDS FOR: CARD FLIPPING, WIN, LOST -->
-      <!-- CARD DISSOLVE WHEN WON, SHAKEN INTO PLACE WHEN INCORRECT MATCH -->
-      
-      <!-- GLITCH ON ENTIRE PAGE WHEN LOST -->
 
-      <!-- remove alt discription  -->
+    <div class="timer"></div>
+    <div class="restart" onclick=startGame()>
+      <i class="repeat"></i>
+    </div>
+  </section>
 
-      <!------MEMORY CARD ONE------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, snake" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD TWO------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, snake down" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD THREE------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, snake down" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD FOUR------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, unicorn skull" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD FIVE------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, unicorn skull" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD SIX------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, unicorn skull" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD SEVEN------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, ram skull" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD EIGHT------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, ram skull" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD NINE------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, ram skull" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD TEN------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, ram skull side" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD ELLEVEN------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, ram skull side" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD TWELVE------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, ram skull side" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD THIRTEEN------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, snake up" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD FOURTEEN------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, snake up" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD FITFHTEEN------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, snake up" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD SIXTEEN------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, scorpion" />
-        <!--------------------- BACK OF CARD IMAGE-->
-        </div>
-        <!------MEMORY CARD ONE------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, snake" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD TWO------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, snake down" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD THREE------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, snake down" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD FOUR------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, unicorn skull" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD FIVE------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, unicorn skull" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD SIX------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, unicorn skull" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD SEVEN------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, ram skull" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      <!------MEMORY CARD EIGHT------->
-      <div class="memoryCard">
-        <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
-        <!-- FRONT OF CARD IMAGE-->
-        <img class="backFace" src="" alt="back, ram skull" />
-        <!-- BACK OF CARD IMAGE-->
-      </div>
-      
-    </section>
-    <!-- <embed src="/gamesong.mp3" loop="true" autostart="true" width="2" height="0"> -->
-  </body>
+  <section class="memoryGame">
+    <!-- THINGS TO WORK ON -->
+    <!-- WELCOME PAGE WITH INSTRUCTIONS, NAME OF PLAYER -->
+    <!-- MINIMIALISM BLACK, WHITE AESTHETICS -->
 
-  <script src="./index2.js"></script>
+    <!-- THREE SEPERATE LEVELS -->
+    <!-- SOUNDS FOR: CARD FLIPPING, WIN, LOST -->
+    <!-- CARD DISSOLVE WHEN WON, SHAKEN INTO PLACE WHEN INCORRECT MATCH -->
+
+    <!-- GLITCH ON ENTIRE PAGE WHEN LOST -->
+
+    <!-- remove alt discription  -->
+
+    <!------MEMORY CARD ONE------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, snake" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD TWO------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, snake down" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD THREE------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, snake down" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD FOUR------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, unicorn skull" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD FIVE------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, unicorn skull" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD SIX------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, unicorn skull" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD SEVEN------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, ram skull" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD EIGHT------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, ram skull" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD NINE------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, ram skull" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD TEN------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, ram skull side" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD ELLEVEN------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, ram skull side" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD TWELVE------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, ram skull side" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD THIRTEEN------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, snake up" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD FOURTEEN------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, snake up" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD FITFHTEEN------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, snake up" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD SIXTEEN------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, scorpion" />
+      <!--------------------- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD ONE------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, snake" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD TWO------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, snake down" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD THREE------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, snake down" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD FOUR------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, unicorn skull" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD FIVE------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, unicorn skull" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD SIX------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, unicorn skull" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD SEVEN------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, ram skull" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+    <!------MEMORY CARD EIGHT------->
+    <div class="memoryCard">
+      <img class="frontFace" src="./images/frontFaceImg.png" alt="font" />
+      <!-- FRONT OF CARD IMAGE-->
+      <img class="backFace" src="" alt="back, ram skull" />
+      <!-- BACK OF CARD IMAGE-->
+    </div>
+
+  </section>
+  <!-- <embed src="/gamesong.mp3" loop="true" autostart="true" width="2" height="0"> -->
+</body>
+
+<script src="./index2.js"></script>
+
 </html>

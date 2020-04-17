@@ -126,10 +126,8 @@ body {
 
 
 /******** FLIP ********/
-/* 
-.memoryCard.flip {
-    transform: rotateY(180deg); */
-/* } */
+
+
 .memoryCard:not(.turned) {
     pointer-events: none;
   }
@@ -141,12 +139,6 @@ body {
     transform: rotateY(180deg);
   }
 
-
-  /* ********* TIMER **********
-  .timer {
-	display: inline-block;
-	margin: 0 1rem;
-} */
 
 
 
