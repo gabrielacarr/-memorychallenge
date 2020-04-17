@@ -32,8 +32,8 @@ let start = [
   "./images/featherwings.png", 
   "/images/7.png",
   "/images/9.png",
-  "./images/scorpion.png",
-  "./images/scorpion.png",
+  "./images/scorpNew.png",
+  "./images/scorpNew.png",
 ];
 
 let start2 = [
