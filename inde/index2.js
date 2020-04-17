@@ -72,7 +72,7 @@ let mySound;
 
 
 // GAME STARTS
-setTimeout(gameStarts, 222000)
+setTimeout(gameStarts, 2000)
 function gameStarts() {
   document.querySelectorAll(".memoryCard").forEach((card) => {
     card.className += " turned";
@@ -81,7 +81,7 @@ function gameStarts() {
 }
 // setTimeout(gameStarts, 3000); //too fast 3k
 function startClock(){
-  let time = 40;
+  let time = 60;
   setInterval(
     function(){
       if(time === 0){
