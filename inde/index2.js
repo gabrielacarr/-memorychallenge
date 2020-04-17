@@ -49,7 +49,7 @@ let start2 = [
     "./images/3.png",
     "./images/4.png",
     "./images/5.png",
-    '/images/scorpion',
+    '/images/scorpion.png',
     "/images/7.png",
     "/images/9.png",
     "./images/1.png",
@@ -113,8 +113,8 @@ document.querySelectorAll(".memoryCard").forEach((card) => {
 // SHUFFLE CRADS
 
 for (let i = 0; i < arrayimage.length; i++) {
-  console.log(typeof arrayimage[i]);
-  let index = Math.floor(Math.random() * start2.length);
+    let index = Math.floor(Math.random() * start2.length);
+    console.log(start2[index], i);
   arrayimage[i].src = start2[index];
     start2.splice(index, 1); // made all cards even
   //  } else {
