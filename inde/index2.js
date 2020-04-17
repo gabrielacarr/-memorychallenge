@@ -21,7 +21,7 @@ let start = [
   "./images/3.png",
   "./images/4.png",
   "./images/5.png",
-  "/images/6.png",
+  "./images/featherwings.png", 
   "/images/7.png",
   "/images/9.png",
   "./images/1.png",
@@ -29,37 +29,37 @@ let start = [
   "./images/3.png",
   "./images/4.png",
   "./images/5.png",
-  "/images/6.png",
+  "./images/featherwings.png", 
   "/images/7.png",
   "/images/9.png",
   "./images/scorpion.png",
   "./images/scorpion.png",
 ];
 let start2 = [
-    "./images/1.png",
-    "./images/2.png",
-    "./images/3.png",
-    "./images/4.png",
-    "./images/5.png",
-    "./images/scorpion.png",
-    "./images/7.png",
-    "./images/9.png",
-    "./images/1.png",
-    "./images/2.png",
-    "./images/3.png",
-    "./images/4.png",
-    "./images/5.png",
-    './images/scorpion.png',
-    "./images/7.png",
-    "./images/9.png",
-    "./images/1.png",
-    "./images/2.png",
-    "./images/3.png",
-    "./images/4.png",
-    "./images/5.png",
-    "./images/scorpion.png",
-    "./images/7.png",
-    "./images/9.png",
+    "./images/1.png", // ram side long
+    "./images/2.png", // ram front
+    "./images/3.png", // unicorn
+    "./images/4.png", // black snake down
+    "./images/5.png", // black snake up
+    "./images/scorpNew.png",
+    "./images/7.png", // bull white
+    "./images/9.png", //snake with flowers
+    "./images/1.png", // ram side long
+    "./images/2.png", // ram front
+    "./images/3.png", // unicorn
+    "./images/4.png", // black snake down
+    "./images/5.png", // black snake up
+    './images/scorpNew.png',
+    "./images/7.png", // bull white
+    "./images/9.png", // snake with flowers
+    "./images/goldbull.png", 
+    "./images/goldbull.png", 
+    "./images/goldfeather.png",
+    "./images/goldfeather.png",
+    "./images/golddeer.png",
+    "./images/golddeer.png",
+    "./images/uni2.png",
+    "./images/uni2.png",
   
 
   ];
@@ -117,13 +117,7 @@ for (let i = 0; i < arrayimage.length; i++) {
     console.log(start2[index], i);
   arrayimage[i].src = start2[index];
     start2.splice(index, 1); // made all cards even
-  //  } else {
-  //     start.length -= 1
-  //  } //random numbers
-
-  //}
-  // trying to get even amount of cards to match to complete board
-  // not sure how to complete //////////////////////////////////////////////////////////////
+ 
   let score = 0;
 
 
