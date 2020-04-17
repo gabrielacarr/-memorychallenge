@@ -20,10 +20,12 @@
 
 li.dot{
 list-style-type: disc;
+margin-left: 170px;
 }
 
 li.wrong{
 list-style-type: circle;
+margin-left: 170px;
 }
 li{
     margin: 0 2rem; 

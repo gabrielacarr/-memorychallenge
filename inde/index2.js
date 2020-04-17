@@ -32,9 +32,9 @@ let start = [
   "/images/6.png",
   "/images/7.png",
   "/images/9.png",
- 
+  "./images/scorpion.png",
+  "./images/scorpion.png",
 ];
-
 let start2 = [
     "./images/1.png",
     "./images/2.png",
@@ -52,10 +52,18 @@ let start2 = [
     '/images/scorpion',
     "/images/7.png",
     "/images/9.png",
+    "./images/1.png",
+    "./images/2.png",
+    "./images/3.png",
+    "./images/4.png",
+    "./images/5.png",
+    "./images/scorpion.png",
+    "/images/7.png",
     "/images/9.png",
-    
+  
+
   ];
- 
+ console.log(start2.length)
 
 let arrayimage = document.getElementsByClassName("backFace");
 console.log(arrayimage);
@@ -64,7 +72,7 @@ let mySound;
 
 
 // GAME STARTS
-setTimeout(gameStarts, 2000)
+setTimeout(gameStarts, 222000)
 function gameStarts() {
   document.querySelectorAll(".memoryCard").forEach((card) => {
     card.className += " turned";
@@ -79,9 +87,6 @@ function startClock(){
       if(time === 0){
       
         alert("Game has terminated")
-
-
-        
         location.href = "/"
       }
       
@@ -109,11 +114,19 @@ document.querySelectorAll(".memoryCard").forEach((card) => {
 
 for (let i = 0; i < arrayimage.length; i++) {
   console.log(typeof arrayimage[i]);
-  let index = Math.floor(Math.random() * start.length);
-  arrayimage[i].src = start[index];
-    start.splice(index, 1); // msde all cards even
-  
+  let index = Math.floor(Math.random() * start2.length);
+  arrayimage[i].src = start2[index];
+    start2.splice(index, 1); // made all cards even
+  //  } else {
+  //     start.length -= 1
+  //  } //random numbers
+
+  //}
+  // trying to get even amount of cards to match to complete board
+  // not sure how to complete //////////////////////////////////////////////////////////////
   let score = 0;
+
+
   // score 
   function addScore(){
   // alert("Your selection matched!");
